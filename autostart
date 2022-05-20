@@ -2,24 +2,27 @@
 
 ### AUTOSTART ###
 sxhkd -c ~/.config/berry/sxhkdrc &
-hsetroot -fill ~/Imágenes/Wallpapers/wp5728460-1080p-minimalist-wallpapers.jpg &
+hsetroot -fill ~/Imágenes/Wallpapers/arc_dark-wallpaper.jpg &
 picom -b --config ~/.config/picom/picom.conf &
+mpv --no-video ~/Música/startup--computer--short-musical-style-phrase--1-sound-effect-80767823.mp3 &
 tint2 &
 nm-applet &
 pnmixer &
 dunst -config ~/.config/dunst/dunstrc &
+xscreensaver -no-splash &
 
 # Set decoration geometry
 berryc border_width       2
 berryc inner_border_width 0
 berryc title_height       2
-berryc edge_gap           30 5 5 5
+berryc edge_gap           40 5 5 5
 
 # Set decoration colors
-berryc focus_color         DC1624
-berryc unfocus_color       DC1624
-berryc inner_focus_color   DC1624	
-berryc inner_unfocus_color DC1624
+# color-theme == arc-dark
+berryc focus_color         5294e2
+berryc unfocus_color       5294e2
+berryc inner_focus_color   5294e2
+berryc inner_unfocus_color 5294e2
 berryc text_focus_color    FFFFFF
 berryc text_unfocus_color  EEEEEE
 
