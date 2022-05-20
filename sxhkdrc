@@ -14,9 +14,18 @@ super + d
 super + Escape
 	pkill -USR1 -x sxhkd
 
-#
-#alt + tab
-#	rofi -show window
+# window switcher
+alt + Tab
+	rofi -show window
+
+# screenshooter
+super + Print
+	scrot -e 'xclip -selection clipboard -t image/png -i $f'
+
+# screenlocker
+super + l
+	xscreensaver-command-lock
+
 #
 # berry hotkeys
 #
@@ -62,7 +71,7 @@ super + n
 super + Tab
     berryc cycle_focus
 
-super + q
+super + shift + q
     berryc window_close
 
 super + c
